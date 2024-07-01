@@ -1,13 +1,11 @@
-def fibonacci(n):
-    a, b = 0, 1
-    for n in range(n):
-          a,b = b, a + b
-          
-    return a 
-# in below code you have to add the serial number of the term
-# suppose you want to find out the n-th term.
-# fibonacci_n = fibonacci(n)
-fibonacci_20 = fibonacci(20)
-# print(fibonacci_n)
-print(fibonacci_20)
-# this code will primarily give output of the 20th term
+def fib(term):
+    if term <= 1:
+        return term
+    else:
+        return fib(term - 1) + fib(term - 2)
+
+
+# Change this value to adjust the number of terms in the sequence.
+number_of_terms = int(input())
+for i in range(number_of_terms):
+    print(fib(i))
