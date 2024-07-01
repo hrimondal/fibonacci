@@ -1,5 +1,4 @@
 **Welcome**
-
 Its a simple fibonacci counter.Run this code using python.
 
 **Requirements**
